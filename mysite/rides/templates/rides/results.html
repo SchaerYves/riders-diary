@@ -1,0 +1,9 @@
+<h1>{{ athlete.full_name }}</h1>
+
+{% comment %} <ul>
+{% for choice in question.choice_set.all %}
+    <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+{% endfor %}
+</ul> {% endcomment %}
+
+<a href="{% url 'rides:detail' athlete.id %}">Vote again?</a>
